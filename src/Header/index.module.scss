@@ -1,12 +1,11 @@
 .Header {
-  font-family: "Inter";
   .top_line {
     width: calc(100% - 160px);
+    margin: 0 auto;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
     font-size: 14px;
     color: #8291a3;
 
@@ -18,8 +17,9 @@
       align-items: center;
     }
     .menu_left {
-      width: 700px;
+      width: 724px;
       height: 17px;
+
       p {
         font-style: normal;
         font-weight: 400;
@@ -29,7 +29,7 @@
         position: relative;
       }
       .p_with_icon:after {
-        background-image: url("../images/icons/icon_maps.svg");
+        background-image: url("../images/icons/icon_maps_ad.svg");
         width: 12px;
         height: 15px;
         left: -15px;
@@ -38,7 +38,7 @@
     }
     .menu_rigth {
       font-weight: 500;
-      width: 280px;
+      width: 273px;
       p {
         position: relative;
       }
@@ -54,15 +54,69 @@
         color: #664ef9;
       }
     }
-    .p_with_icon:after {
-      position: absolute;
-      content: "";
-      width: 12px;
-      height: 15px;
+  }
+  .bottom_line_width {
+    background-color: #ffffff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
 
-      background-repeat: no-repeat;
+    .bottom_line {
+      width: calc(100% - 160px);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        font-size: 24px;
+        font-weight: 1000;
+        text-transform: uppercase;
+        span {
+          color: #ffd54f;
+        }
+      }
+      .menu {
+        width: calc(100% - 132px - 224px);
+        height: 17px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        p {
+          font-size: 14px;
+          font-weight: 600;
+          margin: 0 80px 0 0;
+        }
+        .p_with_icon {
+          position: relative;
+          height: 100%;
+          max-width: 180px;
+          margin-left: 84px;
+          margin-right: 104px;
+        }
+        .p_with_icon:after {
+          width: 22px;
+          height: 23px;
+          right: -35px;
+          top: -3px;
+          background-image: url("../images/icons/icon_maps_flat.svg");
+        }
+      }
+      button {
+        width: 224px;
+        height: 37px;
+        background: linear-gradient(90deg, #9d94ff 0%, #6b50e9 94.5%);
+        border-radius: 19px;
+        border: 0;
+        font-weight: 700;
+        font-size: 14px;
+        color: #ffffff;
+      }
     }
   }
-  .bottom_line {
+
+  .p_with_icon:after {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
   }
 }

@@ -8,6 +8,7 @@
     justify-content: space-between;
     font-size: 14px;
     color: #8291a3;
+    background-color: #f8f8f8;
 
     .menu_left,
     .menu_rigth {
@@ -29,7 +30,7 @@
         position: relative;
       }
       .p_with_icon:after {
-        background-image: url("../images/icons/icon_maps_ad.svg");
+        background-image: url("../../images/icons/icon_maps_ad.svg");
         width: 12px;
         height: 15px;
         left: -15px;
@@ -43,7 +44,7 @@
         position: relative;
       }
       .p_with_icon::after {
-        background-image: url("../images/icons/icon_favorite.svg");
+        background-image: url("../../images/icons/icon_favorite.svg");
         width: 18px;
         height: 20px;
         right: -30px;
@@ -98,7 +99,7 @@
           height: 23px;
           right: -35px;
           top: -3px;
-          background-image: url("../images/icons/icon_maps_flat.svg");
+          background-image: url("../../images/icons/icon_maps_flat.svg");
         }
       }
       button {

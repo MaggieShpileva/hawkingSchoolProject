@@ -1,0 +1,223 @@
+.apartments {
+  margin-top: 40px;
+  width: 1308px;
+  height: 940px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+  .title {
+    .subtitle {
+      margin: 43px 0 0 15px;
+      font-weight: 700;
+      font-size: 14px;
+      background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(90deg, #9d94ff 0%, #6b50e9 94.5%);
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 30px;
+      margin: 15px 0 0 15px;
+      color: #000000;
+    }
+    .location {
+      position: relative;
+      width: 405px;
+      right: -890px;
+      top: -45px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .dropdawn_list_district {
+        margin: 11px 1px 0 0px;
+        width: 185px;
+        height: 40px;
+        background: #ffffff;
+        border: 2px solid rgba(102, 78, 249, 0.8);
+        border-radius: 20px;
+        appearance: none;
+        background-color: transparent;
+        padding-left: 17px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #686868;
+        position: relative;
+        option {
+        }
+      }
+
+      .dropdawn_list_metro:not([multiple]),
+      .dropdawn_list_district:not([multiple]) {
+        background-repeat: no-repeat;
+        background-position: calc(100% - 0.5em) 0.5em;
+        background-size: 18px;
+        background-image: url("../../images/icons/chevron-down.png");
+      }
+      .dropdawn_list_metro {
+        margin: 11px 1px 0 0px;
+        width: 167px;
+        height: 37px;
+        background: #ffffff;
+        border: 2px solid rgba(102, 78, 249, 0.8);
+        border-radius: 20px;
+        appearance: none;
+        background-color: transparent;
+        padding-left: 17px;
+
+        position: relative;
+        .dropdawn_list_metro_select {
+          appearance: none;
+          border-width: 0;
+          background-color: transparent;
+          width: 165px;
+          height: 35px;
+          padding-left: 27px;
+          padding-top: 0px;
+          outline: 0;
+          color: #686868;
+          font-size: 15px;
+          font-weight: 500;
+        }
+      }
+      .dropdawn_list_metro::before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 16px;
+        top: 10px;
+        left: 15px;
+        background: url("../../images/icons/metro.png");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  .flats {
+    display: flex;
+    flex-direction: row;
+    width: 1280px;
+    overflow: hidden;
+    transition: translate;
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    margin-bottom: 38px;
+    margin-left: 15px;
+  }
+
+  .buttons {
+    margin: 0 auto;
+    text-align: center;
+
+    .rigth {
+      margin-left: 12px;
+    }
+    .left,
+    .rigth {
+      background: rgba(102, 78, 249, 0.1);
+      border-radius: 50%;
+      border: 1px solid #664ef9;
+      height: 39px;
+      width: 39px;
+      position: relative;
+    }
+    .rigth:after,
+    .left::after {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 16px;
+      top: 10px;
+      background: url("../../images/icons/click.png");
+    }
+    .rigth::after {
+      left: 15px;
+      background-repeat: no-repeat;
+    }
+    .left::after {
+      left: 2px;
+
+      background-repeat: no-repeat;
+      transform: rotate(180deg);
+    }
+  }
+  .offer {
+    width: 404px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 33px;
+    justify-content: space-between;
+    margin-left: 15px;
+
+    .count_offer {
+      position: relative;
+      h1 {
+        font-weight: 700;
+        font-size: 60px;
+        margin: 0;
+        color: #1e2123;
+      }
+      h1::after {
+        content: "+";
+        color: #664ef9;
+        margin-left: 15px;
+      }
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        color: #8291a3;
+        opacity: 0.6;
+        margin-top: 5px;
+      }
+    }
+    .count_offer::after {
+      position: absolute;
+      width: 70px;
+      height: 2px;
+      content: "";
+      transform: rotate(90deg);
+      opacity: 0.1;
+      top: 50px;
+      left: 160px;
+      background: linear-gradient(#94afff, #4e64f9);
+    }
+    button {
+      background: linear-gradient(90deg, #9d94ff 0%, #6b50e9 94.5%);
+      box-shadow: 0px 15px 40px rgba(0, 96, 206, 0.15);
+      border-radius: 17px;
+      border: 0;
+      width: 177px;
+      height: 37px;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 14px;
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+      position: relative;
+      padding-right: 35px;
+      margin-top: 29px;
+    }
+    button::after {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 17px;
+      top: 10px;
+      right: 25px;
+      background-image: url("../../images/icons/chevron-down-item.png");
+      background-size: cover;
+    }
+  }
+}
+.apartments::after {
+  position: absolute;
+  width: 848px;
+  height: 970px;
+  content: "";
+  background: linear-gradient(90deg, #94afff 0%, #4e64f9 94.5%);
+  opacity: 0.1;
+  border-radius: 40px 40px 40px 0px;
+  top: -34px;
+  right: -110px;
+  z-index: -100;
+}
